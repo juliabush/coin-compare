@@ -1,3 +1,78 @@
-html {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /* Fonts */
+    --ff-main: 'Nunito';
+    --ff-accent: 'Roboto';
+
+    /* Colors */
+    --clr-background-website: #252525;
+    --clr-main-title: #ffee03;
 }
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  html, body {
+    height: 100%;
+    margin: 2rem;
+    background-color: #252525;
+  }
+  .website__main-title {
+    color: #ff9900;
+    letter-spacing: 2px;
+    font-size: 3.6rem;
+    font-style: italic;
+    text-shadow: 2px 2px 4px black;
+    font-weight: 700;
+    font-family: var(--ff-main);
+  }
+  .website__sub-title {
+    color: #ffa012;
+    opacity: 0.8;
+    font-family: var(--ff-accent);
+    font-weight: 600;
+    font-size: 2rem;
+    text-shadow: 6px 2px 4px black;
+    max-width: 860px;
+  }
